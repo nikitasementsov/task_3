@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-buttons {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* Змінено на 8 колонок */
+  gap: 16px;
+  padding: 16px;
+  width: 100%; /* Додано, щоб займати всю ширину */
+}
+
+.color-button {
+  width: 100%;
+  height: 100px;
+  margin: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.color-button.clicked {
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
